@@ -30,6 +30,7 @@ var Stopwatch = function($){
     // Single point of entry - called immediately after instantiation
     function _init(){
         console.log("-> App::init()");
+        //I want the reset function to fire this _init()
         _this.time.text('00:00:00.0');
         _this.laps.empty();
 
@@ -102,6 +103,7 @@ Stopwatch.prototype.start = function(){
     _this = this;
     _this.btnAble('disable' , _this.startBtn, _this.resetBtn );
     _this.btnAble('enable', _this.stopBtn, _this.lapBtn, _this.pauseBtn );
+    _this.laps.empty();
 
     _this.clock = new Date();
     _this.startTime = _this.clock.getTime();
@@ -147,7 +149,7 @@ Stopwatch.prototype.toString = function(){
 };
 
 Stopwatch.prototype.reset = function(){
-    _this._init();
+    _this._init(); //Line isn't firing
 };
 
 // Instantiate application in $(document).ready()
