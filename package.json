@@ -1,0 +1,27 @@
+{
+  "name": "Stopwatch",
+  "description": "A stopwatch with lap timer which is responsive and will eventually be built out to store information on a server and display visual representations of lap times.",
+  "version": "0.0.0",
+  "author": {
+    "name": "Stephen Tvedt",
+    "email": "stephen@stephentvedt.com",
+    "url": "https://github.com/stvedt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stvedt/stopwatch"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.5.3",
+    "grunt-contrib-connect": "~0.2.0",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-qunit": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0"
+  }
+}

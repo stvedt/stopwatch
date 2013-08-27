@@ -1,0 +1,9 @@
+# python and osx stuff
+*.pyc
+*.DS_Store
+
+# Nodejs Modules Folder
+/node_modules
+
+#ide stuff
+*.idea

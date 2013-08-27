@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>  <html class="ie_old lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie"><![endif]-->
+<!--[if IE 7 ]>     <html class="ie7 lt-ie10 lt-ie9 lt-ie8 ie"><![endif]-->
+<!--[if IE 8 ]>     <html class="ie8 lt-ie10 lt-ie9 ie"><![endif]-->
+<!--[if IE 9 ]>     <html class="ie9 lt-ie10 ie"><![endif]-->
+<!--[if IE 10 ]>    <html class="ie10 ie"><![endif]-->
+<!--[if gt IE 10 ]> <html class="ie_new ie"><![endif]-->
+<!--[if !(IE)]><!--><html><!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<section>
+    <div id="time">
+        00:00:00.0
+    </div>
+    <div id="interface">
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+            <br />
+        <button id="lap" disabled>Lap</button>
+        <button id="pause" disabled>Pause</button>
+            <br />
+        <button id="reset" disabled>Clear</button>
+        
+    </div>
+    
+</section>
+<section>   
+    <h2>Laps</h2>
+    <ol id="laps"> </ol>
+</section>
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      if (!window.jQuery) {
+        document.write('<script src="static/js/vendor/jquery/jquery.min.js"><\/script>');
+      }
+    </script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
